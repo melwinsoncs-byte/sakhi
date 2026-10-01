@@ -1,15 +1,28 @@
-# Sakhi
+# Sakhi 🌱
 
-A friendly, voice and text guided demo to help first-time users explore a starting point for government support.
+**A friendly first step to finding support.** Sakhi helps women who are new to digital services explore a useful government support starting point through simple text, tap-to-answer questions, or voice.
 
-## Run
+[Open the app](https://melwinsoncs-byte.github.io/sakhi/) · [View the source](https://github.com/melwinsoncs-byte/sakhi/blob/main/index.html)
 
-Open `index.html` in a modern browser. Voice input depends on browser support and microphone permission; typing and tap-to-answer are available as alternatives.
+## What it does
 
-## Demo notice
+- Starts with three simple topics: farming, earning, and health or family support.
+- Guides the user with one question at a time and large, clear answer buttons.
+- Offers English, Hindi, and Bengali text, plus browser speech input and read-aloud controls where supported.
+- Ends with practical next steps and local places to verify current scheme information.
 
-Scheme suggestions and next steps are sample guidance, not an official eligibility decision or government service. Verify details with a local government office. Never share an OTP, PIN, or password.
+## Demo and safety
+
+Sakhi is a hackathon demo, not an official government service or eligibility checker. Scheme details and next steps are sample guidance and must be verified with a local government office. Sakhi does not request or store an OTP, PIN, password, or bank details. Answers remain in the browser session.
+
+## Run locally
+
+Open `index.html` in a modern browser. For voice input, allow microphone access when the browser asks. If speech recognition is unavailable, choose an answer or type instead.
 
 ## GitHub Pages
 
-A workflow in `.github/workflows/pages.yml` publishes the site from the `main` branch. If Pages is not enabled automatically, open **Settings → Pages**, select **GitHub Actions** as the build and deployment source, and rerun the workflow.
+The repository includes a workflow at `.github/workflows/pages.yml` that publishes the static site from `main`. In the repository’s **Settings → Pages**, set **Build and deployment → Source** to **GitHub Actions**. After the initial setup, pushes to `main` trigger deployment.
+
+## Future integrations
+
+The demo keeps service guidance separate from any live government system, so verified scheme APIs or a trusted local help directory can be connected later without changing the guided interaction.
